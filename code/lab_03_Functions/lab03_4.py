@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Write a DoBreakfast function that takes five arguments:
 meat, eggs, potatos, toast, and beverage.  The default
 meat is bacon, eggs are over easy, potatos is hash browns,
@@ -15,9 +15,9 @@ Call it at least 3 different times, scrambling the arguments.
 def DoBreakfast(meat="bacon", eggs="over easy", 
               potatos="hash browns", toast="white", 
               beverage="coffee"):
-    print "Here is your %s and %s eggs with %s and %s toast." % (
-        meat, eggs, potatos, toast)
-    print "Can I bring you more %s?" % beverage
+    print ("Here is your %s and %s eggs with %s and %s toast." % (
+        meat, eggs, potatos, toast))
+    print ("Can I bring you more %s?" % beverage)
 
 def main():
     DoBreakfast()

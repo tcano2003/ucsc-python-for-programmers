@@ -8,7 +8,7 @@ try:
     number = int(answer)
 except ValueError:
     print (answer, 'is not a number!')
-else:
+else: # this means there is no error
     if number < 10:
         print (number, 'is small.')
     elif number >= 1000:
@@ -16,4 +16,4 @@ else:
     else:
         print (number, 'is medium.')
 
-    (print 'But you like ' + str(number) + '!')
+    print ('But you like ' + str(number) + '!')

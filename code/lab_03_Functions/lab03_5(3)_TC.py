@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-"""Coin flip Experiments, continued. """
-from __future__ import division
+"""This is a function that returns heads or tails like the flip of a coin"""
 import random
 
 def FlipCoin():
-    """Simulates the flip of a coin."""
-
     if random.randrange(0, 2) == 0:
-        return "tails"
-    return "heads"
-
+        return ("tails")
+    return ("heads")
+    
 def GetHeads(target):
     """Flips coins until it gets target heads in a row."""
 
@@ -18,8 +15,10 @@ def GetHeads(target):
         count += 1
         if FlipCoin() == 'heads':
             heads += 1
+            # print("heads") test code to show when heads occurs
         else:          # 'tails'
             heads = 0
+            # print("tails") test code to show when tails occurs
     return count
 
 def GetAverage(number_of_experiments, target):

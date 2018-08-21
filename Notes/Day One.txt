@@ -1,0 +1,33 @@
+Print (number, end = '')
+
+Data Analysis - 3 (teaching this in December)
+
+Enterprise uses - uses 2, don't want to pay for this
+
+using -i when running code means interactive (ask to interact with the end user)
+
+in python 3, can remove the automatic space with sep=''
+
+str() and repr() is the same
+how the interpreter thinks: repr("Hello \nworld")
+"Hello \nworld"
+how to read user friendly: str("Hello \nworld")
+Hello
+World
+
+Minimum width calculation (use the *)
+%.2f (2 decimal points)
+%.*f (choose from the results)
+%.2s (only recieve first two characters)
+%.3d (will return three digits = 001)
+%.*d (find from the input or results)
+
+these are classes, not functions!
+int()
+str()
+
+Everything in Python is a class.
+Range is a class of it's own in Python 3, but is a function in Python 2.
+
+Eval() and repr() are inverts of each other
+
