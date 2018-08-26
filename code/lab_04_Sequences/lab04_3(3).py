@@ -12,7 +12,7 @@ def ReverseName(name):
     parts = name.split()
     return parts.pop() + ', ' + ' '.join(parts)
 
-def ReverseName(name):
+def ReverseName(name): # only the last one is used. Interpreter uses the prior ones internally and then the last definition is used when called in main()
     parts = name.rsplit(None, 1)
     return parts[-1] + ', ' + parts[0]
 

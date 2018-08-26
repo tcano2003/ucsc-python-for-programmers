@@ -1,0 +1,2 @@
+When compiler does method resolution, when it finds one, it does not continue with deeper methods. Just operates within the found one.
+

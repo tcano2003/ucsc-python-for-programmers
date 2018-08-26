@@ -1,0 +1,11 @@
+Splits and Joins
+a=See how she flies
+a.split() # results in list of strings
+'*'.join()
+
+When a list is embedded in a tuple, it is referencing the list, so it IS mutable. In a list, the 
+
+when referencing an item in a dictionary, use parent "Name" and then the ID (class objects) Example: Travis.1?
+
+Every module has a __name__ assigned to it.
+

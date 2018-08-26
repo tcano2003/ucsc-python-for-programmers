@@ -19,3 +19,18 @@ def DoRange(sequence):
 def DoIterator(sequence):
     for element in sequence:
         element
+
+def Profile(times=1):
+    planets = ("Mercury", "Venus", "Earth", "Mars",
+               "Jupiter", "Saturn", "Uranus", "Neptune")
+    for time in range(times):
+        DoLens(planets)
+        DoWhile(planets)
+        DoRange(planets)
+        DoIterator(planets)
+
+def main():
+    import cProfile
+    cProfile.run("Profile(5000)")
+
+main()

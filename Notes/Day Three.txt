@@ -1,0 +1,7 @@
+Lab 11: Dynamic Code
+
+exec() -> setattr
+eval() -> getattr
+
+You can read a whole .py file and execute as a string
+

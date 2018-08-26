@@ -9,7 +9,7 @@ def GetPositiveNumber(prompt):
     giving back the non-positivee number, if that was the
     problem.
     """
-    said = raw_input(prompt)
+    said = input(prompt)
     number = float(said)
     if number > 0:
         return number
@@ -18,10 +18,10 @@ def GetPositiveNumber(prompt):
 
 def main():
     try:
-        print GetPositiveNumber("Positive number: ")
+        print (GetPositiveNumber("Positive number: "))
     except ValueError, exception_object:
-        print "exception_object[0] =", exception_object[0]
-        print "exception_object[1] =", exception_object[1]
+        print ("exception_object[0] =", exception_object[0])
+        print ("exception_object[1] =", exception_object[1])
 
 main()
 

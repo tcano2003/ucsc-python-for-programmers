@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Provides a TotalText function, which adds up all the
 numbers in the text that it receives."""
 
@@ -21,12 +21,12 @@ def TotalText(text, total=0):
     return total
 
 def main():
-    print "Total =",
-    print TotalText("""Here is 1. Add 2 makes 3 or maybe 12, 
+    print ("Total =", end='')
+    print (TotalText("""Here is 1. Add 2 makes 3 or maybe 12, 
 depending on how you operate.
 
 You might like 2.2 and that's enough unless you like "8.8" or 
-maybe 1 more or maybe 87. . .5""")
+maybe 1 more or maybe 87. . .5"""))
 
 if __name__ == '__main__':
     main()

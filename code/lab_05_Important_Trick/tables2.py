@@ -1,15 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Interactive 2-D string unwrapper.
 """
-import tables
+import tablespy3
 
 def main():
     while True:
-        response = raw_input("Say something: ")
+        response = input("Say something: ")
         if not response:
             break
         words = response.split()
-        tables.PrintTable(words)
+        tables3.PrintTable(words)
 
 if __name__ == '__main__':
     main() 

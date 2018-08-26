@@ -1,18 +1,20 @@
-#!/usr/bin/env python  
+#!/usr/bin/env python3  
 """printable_stack_def.py Extending our stack, providing a
 "special method", __str__, which is called whenever:
    1.  "%s" % (printable_stack_object)
    2.  str(printable_stack_object)
    3.  print printable_stack_object """
     
-import lab13_1 as stack_def  # copy of lab exercise
+import lab13_1py3 as stack_def  # copy of lab exercise
     
 class PrintableStack(stack_def.Stack):
     """This class will reveal itself, and the result looks
     like a stack.
     """
     
-    def __str__(self):
+    def __str__(self): """when ask to print, it will run the object
+through this magic string and the string that comes back will be
+what is "return" at the end of this"""
         try:
             min_width = max([len(thing) for thing in self.things])
         except ValueError: # self.things was empty
